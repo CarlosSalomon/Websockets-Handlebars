@@ -1,0 +1,25 @@
+  <div class="h1">
+<h1>LISTADO DE PRODUCTOS</h1>
+</div>
+  <div class="tarjeta">
+     {{#each PRODUCTS}}
+     
+     <div class="card text-white bg-dark mb-3 card 2" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body text-white bg-dark mb-3">
+    <h5 class="card-title text-white bg-dark mb-3">{{this.name}}</h5>
+    <p class="card-text text-white bg-dark mb-3">{{this.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush card text-white bg-dark mb-3">
+    <li class="list-group-item text-white bg-dark mb-3">{{this.price}}</li>
+    <li class="list-group-item card text-white bg-dark mb-3">{{this.stock}}</li>
+    <li class="list-group-item card text-white bg-dark mb-3">{{this.code}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="btn btn-primary">agregar al carrito</a>
+    
+  </div>
+</div>
+    {{/each}} 
+</div>
+<script src="/js/index.js"></script>
